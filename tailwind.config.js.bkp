@@ -1,0 +1,43 @@
+
+module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+  purge: [],
+  theme: {
+    extend: {
+      spacing: {
+        '42': '14rem',
+      }
+    },
+  },
+  variants: {
+    borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
+    fontSize: ['responsive', 'hover'],
+    backgroundColor: ['odd'],
+  },
+  plugins: [],
+  purge: {
+    content: [
+      './src/**/*.vue',
+      './src/**/*.js',
+      './src/**/*.html'
+    ],
+    whitelist: [
+        'body',
+        'html',
+        'img',
+        'a',
+        'g-image',
+        'g-image--lazy',
+        'g-image--loaded',
+    ],
+    extractors: [
+        {
+            extractor: content => content.match(/[A-z0-9-:\\/]+/g),
+            extensions: ['vue', 'js', 'html'],
+        },
+    ],
+  },
+}

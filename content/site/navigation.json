@@ -1,0 +1,22 @@
+{
+    "headerNavigation": [
+      {
+        "name": "Companions",
+        "link": "/",
+        "icon": "/companions.svg",
+        "external": false
+      },
+      {
+        "name": "Guilds",
+        "link": "/guilds",
+        "icon": "/guilds.svg",
+        "external": false
+      },
+      {
+        "name": "Shop",
+        "link": "/shop",
+        "icon": "/shop.svg",
+        "external": false
+      }
+    ]
+  }
